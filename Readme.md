@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дмитрий Романенко](https://up.htmlacademy.ru/htmlcss/26/user/1157027).
-* Наставник: Александр Кошара.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
