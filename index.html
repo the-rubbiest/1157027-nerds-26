@@ -19,7 +19,7 @@
       </nav>
       <div>
         <span class="basket"></span>
-        <span>Корзина</span>
+        <a href="">Корзина</a>
       </div>
       <section>
         <div>
@@ -137,14 +137,14 @@
               <p>Уровень самоотдачи</p>
             </div>
             <div>
-                <p>100%</p>
-                <p>Соблюдение сроков</p>
-              </div>
+              <p>100%</p>
+              <p>Соблюдение сроков</p>
+            </div>
           </div>
           <div>
-              <p>50%</p>
-              <p>Минимальная предоплата</p>
-            </div>
+            <p>50%</p>
+            <p>Минимальная предоплата</p>
+          </div>
         </div>
       </section>
       <section>
@@ -164,9 +164,21 @@
           <h4>NЁRDS DESIGN STUDIO</h4>
           <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-          <div>
-            <a href="">Напишите нам</a>
-          </div>
+          <button type="button" onclick="document.getElementById('feedback-popup').style.display='block'">Напишите нам</button>
+        </div>
+        <div id="feedback-popup" style="display: none;">
+          <button class="popup-close"></button>
+          <h3>Напишите нам</h3>
+          <form action="/feedback" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" 
+            pattern="(.*)\s(.*)" required>
+            <label for="email">Ваш e-mail:</label> 
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+            <label for="text-field">Текст письма:</label>
+            <textarea name="text" id="text-field" rows="5" cols="50" placeholder="В свободной форме" required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
         </div>
       </section>
       <section>

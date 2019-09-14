@@ -20,21 +20,40 @@
       <div>
         <!-- Обертка для иконки корзины -->
         <span class="basket"></span>
-        <span>Корзина</span>
+        <a href="">Корзина</a>
       </div>
       <h1>Магазин готовых шаблонов</h1>          
     </header>
     <main>
       <aside>
-          <!-- Здесь должны быть фильтры, но, как я понимаю,  
-          пока не стоит делать разметку для них -->
+        <form action="/filter-catalog" method="get">
+          <div>
+            <h5>Сетка:</h5>              
+            <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>              
+            <input type="radio" name="grid" id="fixed" value="fixed">
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" name="grid" id="rubber" value="rubber">
+            <label for="rubber">Резиновая</label>
+          </div>
+          <div>
+            <h5>Особенности:</h5>
+            <input type="checkbox" name="features" id="slider" value="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" name="features" id="advantages" value="advantages">
+            <label for="advantages">Блок преимуществ</label>
+            <input type="checkbox" name="features" id="news" value="news" checked>
+            <label for="news">Новости</label>
+            <input type="checkbox" name="features" id="gallery" value="gallery">
+            <label for="gallery">Галерея</label>
+            <input type="checkbox" name="features" id="basket" value="basket">
+            <label for="basket">Корзина</label>
+          </div>
+          <button>Показать</button>
+        </form>
       </aside>
       <section>
         <h4>Сортировать</h4>
-        <!-- Не уверен, что этот див сделан правильно.
-        Наверное, здесь лучше сверстать через радио-баттоны, привязанные к форме 
-        из блока aside, но я не уверен, хорошо ли это с точки зрения верстки,
-        да и формы пока что нет =) -->
         <ul>
           <li><a href="">По цене</a></li>
           <li><a href="">По типу</a></li>
@@ -136,7 +155,21 @@
           <h4>NЁRDS DESIGN STUDIO</h4>
           <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-          <a href="">Напишите нам</a>
+          <button type="button" onclick="document.getElementById('feedback-popup').style.display='block'">Напишите нам</button>
+        </div>
+        <div id="feedback-popup" style="display: none;">
+          <button class="popup-close"></button>
+          <h3>Напишите нам</h3>
+          <form action="/feedback" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" 
+            pattern="(.*)\s(.*)" required>
+            <label for="email">Ваш e-mail:</label> 
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+            <label for="text-field">Текст письма:</label>
+            <textarea name="text" id="text-field" rows="5" cols="50" placeholder="В свободной форме" required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
         </div>
       </section>
       <section>
