@@ -28,7 +28,7 @@
       <aside>
         <form action="/filter-catalog" method="get">
           <div>
-            <h5>Сетка:</h5>              
+            <h4>Сетка:</h4>              
             <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
             <label for="adaptive">Адаптивная</label>              
             <input type="radio" name="grid" id="fixed" value="fixed">
@@ -37,7 +37,7 @@
             <label for="rubber">Резиновая</label>
           </div>
           <div>
-            <h5>Особенности:</h5>
+            <h4>Особенности:</h4>
             <input type="checkbox" name="features" id="slider" value="slider" checked>
             <label for="slider">Слайдер</label>
             <input type="checkbox" name="features" id="advantages" value="advantages">
@@ -155,10 +155,10 @@
           <h4>NЁRDS DESIGN STUDIO</h4>
           <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-          <button type="button" onclick="document.getElementById('feedback-popup').style.display='block'">Напишите нам</button>
+          <button type="button">Напишите нам</button>
         </div>
-        <div id="feedback-popup" style="display: none;">
-          <button class="popup-close"></button>
+        <div id="feedback-popup">
+          <button type="button" class="popup-close"></button>
           <h4>Напишите нам</h4>
           <form action="/feedback" method="post">
             <label for="name">Ваше имя:</label>
@@ -167,7 +167,7 @@
             <label for="email">Ваш e-mail:</label> 
             <input type="email" name="email" id="email" placeholder="email@example.com" required>
             <label for="text-field">Текст письма:</label>
-            <textarea name="text" id="text-field" rows="5" cols="50" placeholder="В свободной форме" required></textarea>
+            <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
             <button type="submit">Отправить</button>
           </form>
         </div>
