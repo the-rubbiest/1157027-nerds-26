@@ -28,28 +28,44 @@
       <aside>
         <form action="/filter-catalog" method="get">
           <div>
-            <h4>Сетка:</h4>              
-            <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
-            <label for="adaptive">Адаптивная</label>              
-            <input type="radio" name="grid" id="fixed" value="fixed">
-            <label for="fixed">Фиксированная</label>
-            <input type="radio" name="grid" id="rubber" value="rubber">
-            <label for="rubber">Резиновая</label>
+            <h4>Сетка:</h4>
+            <div>
+              <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>              
+            </div>
+            <div>
+              <input type="radio" name="grid" id="fixed" value="fixed">
+              <label for="fixed">Фиксированная</label>
+            </div>
+            <div>
+              <input type="radio" name="grid" id="rubber" value="rubber">
+              <label for="rubber">Резиновая</label>
+            </div>
           </div>
           <div>
             <h4>Особенности:</h4>
-            <input type="checkbox" name="features" id="slider" value="slider" checked>
-            <label for="slider">Слайдер</label>
-            <input type="checkbox" name="features" id="advantages" value="advantages">
-            <label for="advantages">Блок преимуществ</label>
-            <input type="checkbox" name="features" id="news" value="news" checked>
-            <label for="news">Новости</label>
-            <input type="checkbox" name="features" id="gallery" value="gallery">
-            <label for="gallery">Галерея</label>
-            <input type="checkbox" name="features" id="basket" value="basket">
-            <label for="basket">Корзина</label>
+            <div>
+              <input type="checkbox" name="features" id="slider" value="slider" checked>
+              <label for="slider">Слайдер</label>
+            </div>
+            <div>
+              <input type="checkbox" name="features" id="advantages" value="advantages">
+              <label for="advantages">Блок преимуществ</label>
+            </div>
+            <div>
+              <input type="checkbox" name="features" id="news" value="news" checked>
+              <label for="news">Новости</label>
+            </div>
+            <div>
+              <input type="checkbox" name="features" id="gallery" value="gallery">
+              <label for="gallery">Галерея</label>
+            </div>
+            <div>
+              <input type="checkbox" name="features" id="basket" value="basket">
+              <label for="basket">Корзина</label>
+            </div>
           </div>
-          <button>Показать</button>
+          <button type="submit">Показать</button>
         </form>
       </aside>
       <section>
