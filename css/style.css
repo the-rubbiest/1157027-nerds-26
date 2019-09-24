@@ -146,11 +146,13 @@ header {
 
 .catalog-item {
   margin: 17px 20px;
+  position: relative;
 }
 
 .project-info {
   background-color: #eeeeee;
   height: 231px;
+  position: absolute;
   width: 100%;
   bottom: 0px;
 }
@@ -162,6 +164,10 @@ header {
   text-transform: uppercase;
 }
 
+.project-title a {
+  color: black;
+}
+
 .project-description {
   color: #666666;
 }
@@ -169,7 +175,5 @@ header {
 .project-price {
   background-color: #fb565a;
   height: 50px;
-  text-align: center;
-  vertical-align: center;
   width: 200px;
 }
