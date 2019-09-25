@@ -3,35 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
-      </style>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <img src="img/nerds-logo.svg" alt="Логотип">
-      </a>  
-      <nav class="site-navigation">
-        <ul>
-          <li class="nav-item"><a href="">Студия</a></li>
-          <li class="nav-item"><a href="">Клиенты</a></li>
-          <li class="nav-item"><a href="catalog.html">Магазин</a></li>
-          <li class="nav-item"><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="user-navigation">
-        <img class="cart-icon" src="img/cart-icon.svg">
-        <a class="basket-link" href="">Корзина</a>
-      </div>
+    <header class="main-header">
+      <section class="main-nav">
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" alt="Логотип">
+        </a>  
+        <nav class="site-navigation">
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="">Студия</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Клиенты</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-navigation">
+          <span class="cart-icon"></span>        
+          <a class="nav-link" href="">Корзина</a>
+        </div>
+      </section>
       <h1 class="catalog-header">Магазин готовых шаблонов</h1>          
     </header>
     <main>
       <aside>
         <form action="/filter-catalog" method="get">
           <div>
-            <h4 class="form-section-header">Сетка:</h4>
+            <h4 class="input-header">Сетка:</h4>
             <div>
               <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
               <label for="adaptive">Адаптивная</label>              
@@ -46,7 +45,7 @@
             </div>
           </div>
           <div>
-            <h4 class="form-section-header">Особенности:</h4>
+            <h4 class="input-header">Особенности:</h4>
             <div>
               <input type="checkbox" name="features" id="slider" value="slider" checked>
               <label for="slider">Слайдер</label>
@@ -68,7 +67,7 @@
               <label for="basket">Корзина</label>
             </div>
           </div>
-          <button class="filter-form-button" type="submit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button>
         </form>
       </aside>
       <section>
@@ -87,73 +86,73 @@
         <div class="catalog-item">
           <!-- Не совсем понимаю, как сделаны кружки сверху карточки проекта.
           Предположу, что это задается через css. -->
-          <div class="project_card-header"></div>
+          <div class="project-header"></div>
           <div>
             <img src="img/sedona_project.jpg" alt="Проект Седона">
           </div>
           <div class="project-info">
-            <h3 class="project-title"><a href="">Sedona</a></h3>  
+            <h2 class="project-title"><a href="">Sedona</a></h2>  
             <p class="project-description">Информационный сайт для туристов</p>
             <div class="project-price">9 900 руб.</div>
           </div>
         </div>
         <div class="catalog-item">
           <!-- Обертка для шапки карточки проекта -->
-          <div class="project_card-header"></div>
+          <div class="project-header"></div>
           <div>
             <img src="img/pink_project.jpg" alt="Проект Pink">
           </div>
           <div class="project-info">
-            <h3 class="project-title"><a href="">Pink app</a></h3>  
+            <h2 class="project-title"><a href="">Pink app</a></h2>  
             <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
             <div class="project-price">9 900 руб.</div>
           </div>
         </div>
         <div class="catalog-item">
           <!-- Обертка для шапки карточки проекта -->
-          <div class="project_card-header"></div>
+          <div class="project-header"></div>
           <div>
             <img src="img/barbershop_project.jpg" alt="Проект Borodinski">
           </div>
           <div class="project-info">
-            <h3 class="project-title"><a href="">Barbershop</a></h3>  
+            <h2 class="project-title"><a href="">Barbershop</a></h2>  
             <p class="project-description">Сайт салона красоты.</p>
-            <p>Для мужчин, да.</p>
+            <p class="project-description">Для мужчин, да.</p>
             <div class="project-price">9 900 руб.</div>
           </div>
         </div>
         <div class="catalog-item">
           <!-- Обертка для шапки карточки проекта -->
-          <div class="project_card-header"></div>
+          <div class="project-header"></div>
           <div>
             <img src="img/mishka_project.jpg" alt="Проект Mishka">
           </div>
           <div class="project-info">
-            <h3 class="project-title"><a href="">Mishka</a></h3>  
+            <h2 class="project-title"><a href="">Mishka</a></h2>  
             <p class="project-description">Интернет-магазин вязаных игрушек</p>
             <div class="project-price">9 900 руб.</div>
           </div>
         </div>
         <div class="catalog-item">
           <!-- Обертка для шапки карточки проекта -->
-          <div class="project_card-header"></div>
+          <div class="project-header"></div>
           <div>
             <img src="img/aplus_project.jpg" alt="Проект A Plus">
           </div>
           <div class="project-info">
-            <h3 class="project-title"><a href="">A plus</a></h3>  
+            <h2 class="project-title"><a href="">A plus</a></h2>  
             <p class="project-description">Лендинг курсов повышения квалификации</p>
             <div class="project-price">9 900 руб.</div>
           </div>
         </div>
         <div class="catalog-item">
           <!-- Обертка для шапки карточки проекта -->
-          <div class="project_card-header"></div>
+          <div class="project-header"></div>
           <div>
             <img src="img/kvast_project.jpg" alt="Проект Кваст">
           </div>
           <div class="project-info">
-            <h3 class="project-title"><a href="">Кваст</a></h3>  
+            <h2 class="project-title"><a href="">Кваст</a></h2>  
             <p class="project-description">Промо-сайт производителя крафтового кваса</p>
             <div class="project-price">9 900 руб.</div>
           </div>
@@ -193,12 +192,12 @@
           </form>
         </div>
       </section>
-      <section>
-        <a href=""><img src="img/vk-icon.svg" alt="Мы Вконтакте"></a>
-        <a href=""><img src="img/fb-icon.svg" alt="Мы в Фейсбуке"></a>
-        <a href=""><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a>
-        <div>
-          <p>Давайте дружить, это выгодно!</p>
+      <section class="social-networks">
+        <a class="social-link" href=""><img src="img/vk-icon.svg" alt="Мы Вконтакте"></a>
+        <a class="social-link" href=""><img src="img/fb-icon.svg" alt="Мы в Фейсбуке"></a>
+        <a class="social-link" href=""><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a>
+        <div class="discount">
+          <p class="friendship">Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
       </section>

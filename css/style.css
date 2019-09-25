@@ -1,6 +1,30 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400; 
+  src: local('Roboto-Regular'),
+       url('../fonts/Roboto-Regular.ttf') format('truetype');
+ }
+
+ @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500; 
+  src: local('Roboto-Medium'),
+       url('../fonts/Roboto-Medium.ttf') format('truetype');
+ }
+
+ @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto-Bold'),
+       url('../fonts/Roboto-Bold.ttf') format('truetype');
+ }
+
 body {
   color: #000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -16,14 +40,19 @@ li {
   list-style: none;
 }
 
-header {
+.main-header {
   background-color: #eeeeee;
 }
 
-.site-navigation ul{
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.site-navigation ul {
   align-items: center;
   display: flex;
-  direction: row;
   justify-content: center;
 }
 
@@ -31,17 +60,24 @@ header {
   margin: 0 24px;
 }
 
-.nav-item a {
+.nav-link {
   color: #000000;
 }
 
-.user-navigation {
+.nav-link:hover {
+  color: #fb565a;
+}
+
+.nav-link:active {
+  color: #a6a6a6;
+}
+
+.cart-icon {
+  background-image: url('../img/cart-icon.svg');
+  background-repeat: no-repeat;
   display: inline-block;
-  float: right;
-}
-
-.basket-link {
-  color: #000000;
+  height: 15px;
+  width: 15px;
 }
 
 .services {
@@ -56,50 +92,83 @@ header {
 
 .social-networks {
   min-height: 217px;
+  display: flex;
 }
 
 .social-link {
   background-color: #e1e1e1;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80px;
-  position: relative;
   width: 80px;
 }
 
-.social-link img {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.social-link:hover {
+  background-color: #e74246;
+}
+
+.social-link:active {
+  background-color: #d7373b;
 }
 
 .order-link {
   display: inline-block;
   height: 50px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   width: 160px;  
+}
+
+.order {
+  color: #fff4f4;
+}
+
+.order:active {
+  color: rgba(255, 244, 244, 0.3);
 }
 
 .site {
   background-color: #fb565a;
 }
 
+.site:hover {
+  background-color: #e74246;
+}
+
+.site:active {
+  background-color: #d7373b;
+}
+
 .app {
   background-color: #00ca74;
+}
+
+.app:hover {
+  background-color: #00bc6c;
+}
+
+.app:active {
+  background-color: #00aa62;
 }
 
 .presentation {
   background-color: #efc84a;
 }
 
+.presentation:active {
+  background-color: #e5a722;
+}
+
+.presentation:hover {
+  background-color: #eab534;
+}
+
 .order-link a {
   color: #ffffff;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .discount {
@@ -114,26 +183,35 @@ header {
 
 .catalog-header {
   font-size: 55px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 
-.form-section-header {
+.input-header {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.filter-form-button {
+.filter-button {
   background-color: #eeeeee;
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
   height: 50px;
   text-transform: uppercase;
   text-align: center;
   width: 260px;
   vertical-align: center;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-items {
@@ -146,20 +224,34 @@ header {
 
 .catalog-item {
   margin: 17px 20px;
+  position: relative;
 }
 
 .project-info {
   background-color: #eeeeee;
+  bottom: 0;
   height: 231px;
+  position: absolute;
   width: 100%;
-  bottom: 0px;
 }
 
 .project-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.project-title a {
+  color: black;
+}
+
+.project-title a:hover {
+  color: #fc8386;
+}
+
+.project-title a:active {
+  color: #b2b2b2;
 }
 
 .project-description {
@@ -169,7 +261,13 @@ header {
 .project-price {
   background-color: #fb565a;
   height: 50px;
-  text-align: center;
-  vertical-align: center;
   width: 200px;
+}
+
+.project-price:hover {
+  background-color: #e74246;
+}
+
+.project-price:active {
+  background-color: #d7373b;
 }

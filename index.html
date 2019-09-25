@@ -3,28 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
-    </style>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <img src="img/nerds-logo.svg" alt="Логотип">
-      </a>
-      <nav class="site-navigation">
-        <ul>
-          <li class="nav-item"><a href="">Студия</a></li>
-          <li class="nav-item"><a href="">Клиенты</a></li>
-          <li class="nav-item"><a href="catalog.html">Магазин</a></li>
-          <li class="nav-item"><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="user-navigation">
-        <img class="cart-icon" src="img/cart-icon.svg">
-        <a class="basket-link" href="">Корзина</a>
-      </div>
+    <header class="main-header">
+      <section class="main-nav">
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" alt="Логотип">
+        </a>
+        <nav class="site-navigation">
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="">Студия</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Клиенты</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-navigation">
+          <span class="cart-icon"></span>
+          <a class="nav-link" href="">Корзина</a>
+        </div>
+      </section>
       <section>
         <div>
           <p>
@@ -78,9 +77,9 @@
               как увидит ваш сайт!
             </p>
           </div>
-          <div class="order-link site">
-            <a href="">Заказать</a>
-          </div>
+          <a class="order" href="">
+            <div class="order-link site">Заказать</div>
+          </a>
         </div>
         <div class="service">
           <div>
@@ -94,9 +93,9 @@
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
           </div>
-          <div class="order-link app">
-            <a href="">Заказать</a>
-          </div>
+          <a class="order" href="">
+            <div class="order-link app">Заказать</div>
+          </a>
         </div>
         <div class="service">
           <div>
@@ -110,9 +109,9 @@
               Вы даже не подозреваете, насколько вы изумительны!
             </p>
           </div>
-          <div class="order-link presentation">
-            <a href="">Заказать</a>
-          </div>
+          <a class="order" href="">
+              <div class="order-link presentation">Заказать</div>
+          </a>
         </div>
       </section>
       <section>
