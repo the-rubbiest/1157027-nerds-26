@@ -36,10 +36,6 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
 .main-header {
   background-color: #eeeeee;
 }
@@ -58,6 +54,7 @@ li {
 
 .nav-item {
   margin: 0 24px;
+  list-style: none;
 }
 
 .nav-link {
@@ -70,6 +67,18 @@ li {
 
 .nav-link:active {
   color: #a6a6a6;
+}
+
+.develop-service {
+  list-style: none;
+}
+
+.partner-logo {
+  list-style: none;
+}
+
+.sort {
+  list-style: none;
 }
 
 .cart-icon {
@@ -114,7 +123,6 @@ li {
 }
 
 .order-link {
-  display: inline-block;
   height: 50px;
   display: flex;
   align-items: center;
@@ -217,7 +225,6 @@ li {
 .catalog-items {
   align-items: center;
   display: flex;
-  direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
