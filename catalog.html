@@ -26,10 +26,10 @@
       </section>
       <h1 class="catalog-header">Магазин готовых шаблонов</h1>          
     </header>
-    <main>
+    <main class="catalog">
       <aside>
         <form action="/filter-catalog" method="get">
-          <div>
+          <div class="filter-item">
             <h4 class="input-header">Сетка:</h4>
             <div>
               <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
@@ -44,7 +44,7 @@
               <label for="rubber">Резиновая</label>
             </div>
           </div>
-          <div>
+          <div class="filter-item">
             <h4 class="input-header">Особенности:</h4>
             <div>
               <input type="checkbox" name="features" id="slider" value="slider" checked>
@@ -67,10 +67,10 @@
               <label for="basket">Корзина</label>
             </div>
           </div>
-          <button class="filter-button" type="submit">Показать</button>
+          <button class="filter-button filter-item" type="submit">Показать</button>
         </form>
       </aside>
-      <section>
+      <section class="catalog-sort">
         <h4>Сортировать</h4>
         <ul>
           <li class="sort"><a href="">По цене</a></li>
