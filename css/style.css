@@ -44,7 +44,7 @@ a {
   min-height: 355px;
 }
 
-.main-nav {
+.header-top {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -59,6 +59,16 @@ a {
 .nav-item {
   margin: 0 24px;
   list-style: none;
+}
+
+.basket-link::before {
+  background-image: url('../img/cart-icon.svg');
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  height: 15px;
+  margin-right: 16px;
+  width: 15px;
 }
 
 .nav-link {
@@ -94,10 +104,9 @@ a {
 }
 
 .services {
-  align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 .service-content h3 {
@@ -315,7 +324,7 @@ a {
 
 .catalog {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 30px 140px 30px 140px;
 }
 
