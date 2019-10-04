@@ -23,42 +23,51 @@
           <a class="nav-link basket-link" href="">Корзина</a>
         </div>
       </div>
-      <section>
-        <div>
-          <p>
-            Долго, дорого, скрупулезно.
-          </p>
-          <p>
-            Математически выверенный дизайн для вашего сайта 
-            или мобильного приложения
-          </p> 
+      <section class="slider">
+        <div class="slide">
+          <div class="slide-info">
+            <p class="tagline">
+              Долго, дорого, скрупулезно.
+            </p>
+            <p class="tagline-description">
+              Математически выверенный дизайн для вашего сайта 
+              или мобильного приложения
+            </p> 
+          </div>
+          <div class="slide-image first-slide"></div>
         </div>
-        <div>
-          <p>
-            Любим математику как никто другой
-          </p>
-          <p>
-            Никакого креатива, только математические формулы
-            для расчета идеальных пропорций.
-          </p>
-        </div>  
-        <div>
-          <p>
-            Только ночь, только хардкор
-          </p>
-          <p>
-            Работать днем, как все ? Мы против этого.
-            Ближе к полуночи работа только начинается.
-          </p>
+        <div class="slide hidden">
+          <div class="slide-info">
+            <p class="tagline">
+              Любим математику как никто другой
+            </p>
+            <p class="tagline-description">
+              Никакого креатива, только математические формулы
+              для расчета идеальных пропорций.
+            </p>
+          </div>  
+          <div class="slide-image second-slide"></div>
+        </div>
+        <div class="slide hidden">
+          <div class="slide-info">
+            <p class="tagline">
+              Только ночь, только хардкор
+            </p>
+            <p class="tagline-description">
+              Работать днем, как все ? Мы против этого.
+              Ближе к полуночи работа только начинается.
+            </p>
+          </div>
+          <div class="slide-image third-slide"></div>
+        </div>
+        <div class="slider-controls">
+          <a class="slider-link" href="">Узнать больше</a>
+          <div>
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+          </div>
         </div> 
-        <div>
-          <a href="">Узнать больше</a>
-        </div>
-        <div>
-          <input type="radio" name="slider" id="slide1">
-          <input type="radio" name="slider" id="slide2">
-          <input type="radio" name="slider" id="slide3">
-        </div>
       </section>    
     </header>
     <main>
@@ -113,8 +122,8 @@
           </a>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="about-section">
+        <div class="company-description">
           <p>
             Мы - маленькая, но гордая дизайн-студия из Краснодара.
           </p>
@@ -134,49 +143,47 @@
         </div>
         <div>
           <div>
-            <img src="about-logo.png" alt="Логотип">
-          </div>
-          <div>
-            <h3>
-              С 2004 года любим точность во всем:
-            </h3>
-            <div>
+            <img src="img/nerds-illustration.jpg" alt="Логотип">
+          </div>        
+          <h3>
+            С 2004 года любим точность во всем:
+          </h3>
+          <div class="accuracy-items">
+            <div class="accuracy-item">
               <p>146%</p>
               <p>Уровень самоотдачи</p>
             </div>
-            <div>
+            <div class="accuracy-item">
               <p>100%</p>
               <p>Соблюдение сроков</p>
             </div>
-          </div>
-          <div>
-            <p>50%</p>
-            <p>Минимальная предоплата</p>
+            <div class="accuracy-item">
+              <p>50%</p>
+              <p>Минимальная предоплата</p>
+            </div>
           </div>
         </div>
       </section>
       <section>
-        <ul>
-          <li class="partner-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="html_academy.png" alt="Логотип html academy"></a></li>
-          <li class="partner-logo"><a href="https://lonixoon.github.io/barbershop-adaptive/"><img src="borodinski.png" alt="Логотип Borodinski"></a></li>
-          <li class="partner-logo"><a href="https://hungryowl.github.io/pink/index.html"><img src="pink.png" alt="Логотип Pink"></a></li>
-          <li class="partner-logo"><a href="https://tyalomishka.herokuapp.com/"><img src="mishka.png" alt="Логотип Mishka"></a></li>
+        <ul class="partners">
+          <li class="partner-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy-logo.png" alt="Логотип html academy"></a></li>
+          <li class="partner-logo"><a href="https://lonixoon.github.io/barbershop-adaptive/"><img src="img/borodinski-logo.png" alt="Логотип Borodinski"></a></li>
+          <li class="partner-logo"><a href="https://hungryowl.github.io/pink/index.html"><img src="img/pink-logo.png" alt="Логотип Pink"></a></li>
+          <li class="partner-logo"><a href="https://tyalomishka.herokuapp.com/"><img src="img/mishka-logo.png" alt="Логотип Mishka"></a></li>
         </ul>
       </section>      
     </main>
-    <footer>
+    <footer class="main-footer">
       <section>
         <div id="map">          
         </div>
-        <div>
+        <div class="contacts">
           <h4>NЁRDS DESIGN STUDIO</h4>
           <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-          <div>
-            <a href="">Напишите нам</a>
-          </div>
+          <a href="" class="feedback-link">Напишите нам</a>
         </div>
-        <div id="feedback-popup">
+        <div id="feedback-popup" class="hidden">
           <button type="button" class="popup-close"></button>
           <h4>Напишите нам</h4>
           <form action="/feedback" method="post">

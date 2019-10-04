@@ -35,10 +35,6 @@ body {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 .main-header {
   background-color: #eeeeee;
   min-height: 355px;
@@ -48,6 +44,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .site-navigation ul {
@@ -59,6 +57,10 @@ a {
 .nav-item {
   margin: 0 24px;
   list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
 }
 
 .basket-link::before {
@@ -95,6 +97,62 @@ a {
   list-style: none;
 }
 
+.slider {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-info {  
+  width: 380px;
+}
+
+.slide-image {
+  width: 760px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.slider-link {
+  background-color: #fb565a;
+  width: 240px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.first-slide {
+  background-image: url('../img/nerds-index-slide1.png');
+  background-repeat: no-repeat;
+}
+
+.second-slide {
+  background-image: url('../img/nerds-index-slide2.png');
+  background-repeat: no-repeat;
+}
+
+.third-image {
+  background-image: url('../img/nerds-index-slide3.png');
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 630px;
+}
+
 .cart-icon {
   background-image: url('../img/cart-icon.svg');
   background-repeat: no-repeat;
@@ -107,10 +165,68 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .service-content h3 {
   line-height: 30px;
+}
+
+.about-section {
+  padding-top: 80px;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #eeeeee;
+}
+
+.company-description {
+  width: 660px;
+}
+
+.accuracy-items {
+  display: flex;
+}
+
+.accuracy-item {
+  width: 100px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.main-footer {
+  margin-top: 80px;
+}
+
+.contacts {
+  width: 320px;
+  min-height: 310px;
+  background-color: #ffffff;
+  margin-left: 140px;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+
+.feedback-link {
+  display: block;
+  width: 220px;
+  min-height: 50px;
+  background-color: #fb565a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
 }
 
 .social-networks {
@@ -158,6 +274,7 @@ a {
 
 .order {
   color: #fff4f4;
+  text-decoration: none;
 }
 
 .order:active {
@@ -326,6 +443,15 @@ a {
   display: flex;
   justify-content: center;
   margin: 30px 140px 30px 140px;
+}
+
+.catalog-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  padding-left: 20px;
 }
 
 .filter-item {
