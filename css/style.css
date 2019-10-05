@@ -407,13 +407,13 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-top: 37px;
-  margin-bottom: 28px;
   width: 200px;  
   margin-bottom: 0;
 }
 
 .project-title a {
   color: black;
+  text-decoration: none;
 }
 
 .project-title a:hover {
