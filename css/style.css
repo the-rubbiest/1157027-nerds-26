@@ -38,12 +38,13 @@ body {
 .main-header {
   background-color: #eeeeee;
   min-height: 355px;
+  padding-top: 50px;
 }
 
 .header-top {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-left: 140px;
   margin-right: 140px;
 }
@@ -59,10 +60,6 @@ body {
   list-style: none;
 }
 
-.nav-item a {
-  text-decoration: none;
-}
-
 .basket-link::before {
   background-image: url('../img/cart-icon.svg');
   background-repeat: no-repeat;
@@ -75,6 +72,7 @@ body {
 
 .nav-link {
   color: #000000;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -93,8 +91,14 @@ body {
   list-style: none;
 }
 
-.sort {
+.sort-item {
+  display: inline;
   list-style: none;
+  margin-right: 25px;
+}
+
+.sort-item a {
+  text-decoration: none;
 }
 
 .slider {
@@ -163,9 +167,15 @@ body {
 
 .services {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-left: 140px;
+  margin-right: 140px;
   margin-top: 80px;
   margin-bottom: 80px;
+}
+
+.service {
+  width: 300px;
 }
 
 .service-content h3 {
@@ -205,6 +215,8 @@ body {
 
 .main-footer {
   margin-top: 80px;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .contacts {
@@ -232,7 +244,7 @@ body {
 .social-networks {
   min-height: 217px;
   display: flex;
-  margin-left: 140px;
+  justify-content: center;
 }
 
 .social-link {
@@ -356,7 +368,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 260px;
-  vertical-align: center;
 }
 
 .filter-button:hover {
@@ -369,14 +380,13 @@ body {
 }
 
 .catalog-items {
-  align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .catalog-item {
-  margin: 17px 20px;
+  margin-bottom: 34px;
   position: relative;
 }
 
@@ -441,7 +451,7 @@ body {
 
 .catalog {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 30px 140px 30px 140px;
 }
 
@@ -454,6 +464,20 @@ body {
   padding-left: 20px;
 }
 
+.filter {
+  width: 260px;
+}
+
+.catalog-sort {
+  width: 760px;
+}
+
 .filter-item {
   margin-bottom: 50px;
 }
+
+.sort-items {
+  display: flex;
+  justify-content: space-between;
+}
+

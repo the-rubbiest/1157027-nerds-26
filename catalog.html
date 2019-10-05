@@ -26,7 +26,7 @@
       <h1 class="catalog-header">Магазин готовых шаблонов</h1>          
     </header>
     <main class="catalog">
-      <aside>
+      <aside class="filter">
         <form action="/filter-catalog" method="get">
           <div class="filter-item">
             <h4 class="input-header">Сетка:</h4>
@@ -70,102 +70,106 @@
         </form>
       </aside>
       <section class="catalog-sort">
-        <h4>Сортировать:</h4>
-        <ul>
-          <li class="sort"><a href="">По цене</a></li>
-          <li class="sort"><a href="">По типу</a></li>
-          <li class="sort"><a href="">По названию</a></li>
-        </ul>
-        <!-- Треугольники сортировки. Не уверен, задаются ли они через css
-        или подключаются как изображения. Пока что сделал, будто через css. -->
-        <a href="" class="sort-down"></a>
-        <a href="" class="sort-up"></a>
-      </section>
-      <section class="catalog-content">
-        <div class="catalog-items">
-          <div class="catalog-item">
-            <!-- Не совсем понимаю, как сделаны кружки сверху карточки проекта.
-            Предположу, что это задается через css. -->
-            <div class="project-header"></div>
-            <div>
-              <img src="img/sedona_project.jpg" alt="Проект Седона">
-            </div>
-            <div class="project-info">
-              <h2 class="project-title"><a href="">Sedona</a></h2>  
-              <p class="project-description">Информационный сайт для туристов</p>
-              <div class="project-price">9 900 руб.</div>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
-            <div>
-              <img src="img/pink_project.jpg" alt="Проект Pink">
-            </div>
-            <div class="project-info">
-              <h2 class="project-title"><a href="">Pink app</a></h2>  
-              <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
-              <div class="project-price">9 900 руб.</div>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
-            <div>
-              <img src="img/barbershop_project.jpg" alt="Проект Borodinski">
-            </div>
-            <div class="project-info">
-              <h2 class="project-title"><a href="">Barbershop</a></h2>
-              <p class="project-description">Сайт салона красоты.
-              <br>Для мужчин, да.
-              </p>
-              <div class="project-price">9 900 руб.</div>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
-            <div>
-              <img src="img/mishka_project.jpg" alt="Проект Mishka">
-            </div>
-            <div class="project-info">
-              <h2 class="project-title"><a href="">Mishka</a></h2>  
-              <p class="project-description">Интернет-магазин вязаных игрушек</p>
-              <div class="project-price">9 900 руб.</div>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
-            <div>
-              <img src="img/aplus_project.jpg" alt="Проект A Plus">
-            </div>
-            <div class="project-info">
-              <h2 class="project-title"><a href="">A plus</a></h2>  
-              <p class="project-description">Лендинг курсов повышения квалификации</p>
-              <div class="project-price">9 900 руб.</div>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
-            <div>
-              <img src="img/kvast_project.jpg" alt="Проект Кваст">
-            </div>
-            <div class="project-info">
-              <h2 class="project-title"><a href="">Кваст</a></h2>  
-              <p class="project-description">Промо-сайт производителя крафтового кваса</p>
-              <div class="project-price">9 900 руб.</div>
-            </div>
-          </div>
+        <div class="sort-items">
+          <h4>Сортировать:</h4>
+          <div>
+            <ul>
+              <li class="sort-item"><a href="">По цене</a></li>
+              <li class="sort-item"><a href="">По типу</a></li>
+              <li class="sort-item"><a href="">По названию</a></li>
+            </ul>
+            <!-- Треугольники сортировки. Не уверен, задаются ли они через css
+            или подключаются как изображения. Пока что сделал, будто через css. -->
+            <a href="" class="sort-down"></a>
+            <a href="" class="sort-up"></a>
+          </div>  
         </div>
-        <div class="pagination">
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-          <a href="">Следующая</a>
-        </div>  
-      </section>    
+        <div class="catalog-content">
+          <div class="catalog-items">
+            <div class="catalog-item">
+              <!-- Не совсем понимаю, как сделаны кружки сверху карточки проекта.
+              Предположу, что это задается через css. -->
+              <div class="project-header"></div>
+              <div>
+                <img src="img/sedona_project.jpg" alt="Проект Седона">
+              </div>
+              <div class="project-info">
+                <h2 class="project-title"><a href="">Sedona</a></h2>  
+                <p class="project-description">Информационный сайт для туристов</p>
+                <div class="project-price">9 900 руб.</div>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <!-- Обертка для шапки карточки проекта -->
+              <div class="project-header"></div>
+              <div>
+                <img src="img/pink_project.jpg" alt="Проект Pink">
+              </div>
+              <div class="project-info">
+                <h2 class="project-title"><a href="">Pink app</a></h2>  
+                <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
+                <div class="project-price">9 900 руб.</div>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <!-- Обертка для шапки карточки проекта -->
+              <div class="project-header"></div>
+              <div>
+                <img src="img/barbershop_project.jpg" alt="Проект Borodinski">
+              </div>
+              <div class="project-info">
+                <h2 class="project-title"><a href="">Barbershop</a></h2>
+                <p class="project-description">Сайт салона красоты.
+                <br>Для мужчин, да.
+                </p>
+                <div class="project-price">9 900 руб.</div>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <!-- Обертка для шапки карточки проекта -->
+              <div class="project-header"></div>
+              <div>
+                <img src="img/mishka_project.jpg" alt="Проект Mishka">
+              </div>
+              <div class="project-info">
+                <h2 class="project-title"><a href="">Mishka</a></h2>  
+                <p class="project-description">Интернет-магазин вязаных игрушек</p>
+                <div class="project-price">9 900 руб.</div>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <!-- Обертка для шапки карточки проекта -->
+              <div class="project-header"></div>
+              <div>
+                <img src="img/aplus_project.jpg" alt="Проект A Plus">
+              </div>
+              <div class="project-info">
+                <h2 class="project-title"><a href="">A plus</a></h2>  
+                <p class="project-description">Лендинг курсов повышения квалификации</p>
+                <div class="project-price">9 900 руб.</div>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <!-- Обертка для шапки карточки проекта -->
+              <div class="project-header"></div>
+              <div>
+                <img src="img/kvast_project.jpg" alt="Проект Кваст">
+              </div>
+              <div class="project-info">
+                <h2 class="project-title"><a href="">Кваст</a></h2>  
+                <p class="project-description">Промо-сайт производителя крафтового кваса</p>
+                <div class="project-price">9 900 руб.</div>
+              </div>
+            </div>
+          </div>        
+          <div class="pagination">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">Следующая</a>
+          </div>  
+        </div>
+      </section>      
     </main>
     <footer class="main-footer">
       <section>
