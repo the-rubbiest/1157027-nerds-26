@@ -481,3 +481,35 @@ body {
   justify-content: space-between;
 }
 
+.site-icon {
+  box-sizing: border-box;
+  display: block;
+  content: '';
+  background-image: url("../img/site.png");
+  background-repeat: no-repeat;
+  height: 146px;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.app-icon {
+  box-sizing: border-box;
+  display: block;
+  content: '';
+  background-image: url("../img/applications.png");
+  background-repeat: no-repeat;
+  height: 146px;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.presentation-icon {
+  box-sizing: border-box;
+  display: block;
+  content: '';
+  background-image: url("../img/presentation.png");
+  background-repeat: no-repeat;
+  height: 146px;
+  width: 300px;
+  margin-bottom: 30px;
+}
