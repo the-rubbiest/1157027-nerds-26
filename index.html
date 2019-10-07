@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-top">
+      <div class="header-top wrapper">
         <a href="index.html">
           <img src="img/nerds-logo.svg" alt="Логотип">
         </a>
@@ -23,8 +23,8 @@
           <a class="nav-link basket-link" href="">Корзина</a>
         </div>
       </div>
-      <section class="slider">
-        <div class="slide">
+      <section class="slider wrapper slide-image first-slide">
+        <div>
           <div class="slide-info">
             <p class="tagline">
               Долго, дорого, скрупулезно.
@@ -34,7 +34,6 @@
               или мобильного приложения
             </p> 
           </div>
-          <div class="slide-image first-slide"></div>
         </div>
         <div class="slide hidden">
           <div class="slide-info">
@@ -45,8 +44,7 @@
               Никакого креатива, только математические формулы
               для расчета идеальных пропорций.
             </p>
-          </div>  
-          <div class="slide-image second-slide"></div>
+          </div>
         </div>
         <div class="slide hidden">
           <div class="slide-info">
@@ -58,10 +56,9 @@
               Ближе к полуночи работа только начинается.
             </p>
           </div>
-          <div class="slide-image third-slide"></div>
         </div>
         <div class="slider-controls">
-          <a class="slider-link" href="">Узнать больше</a>
+          <a class="link red-link slider-link" href="">Узнать больше</a>
           <div>
             <input type="radio" name="slider" id="slide1" checked>
             <input type="radio" name="slider" id="slide2">
@@ -71,9 +68,8 @@
       </section>    
     </header>
     <main>
-      <section class="services">
-        <div class="service">
-          <div class="site-icon"></div>
+      <section class="services wrapper">
+        <div class="service site">
           <div class="service-content">
             <h3>
               Веб-сайты
@@ -83,12 +79,11 @@
               как увидит ваш сайт!
             </p>
           </div>
-          <a class="order" href="">
-            <div class="order-link site">Заказать</div>
+          <a href="">
+            <div class="link upcase order-link red-link">Заказать</div>
           </a>
         </div>
-        <div class="service">
-          <div class="app-icon"></div>
+        <div class="service app">
           <div class="service-content">
             <h3>
               Приложения
@@ -97,12 +92,11 @@
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
           </div>
-          <a class="order" href="">
-            <div class="order-link app">Заказать</div>
+          <a href="">
+            <div class="link upcase order-link green-link">Заказать</div>
           </a>
         </div>
-        <div class="service">
-          <div class="presentation-icon"></div>
+        <div class="service presentation">
           <div class="service-content">
             <h3>
               Презентации
@@ -111,12 +105,12 @@
               Вы даже не подозреваете, насколько вы изумительны!
             </p>
           </div>
-          <a class="order" href="">
-              <div class="order-link presentation">Заказать</div>
+          <a href="">
+              <div class="link upcase order-link yellow-link">Заказать</div>
           </a>
         </div>
-      </section>
-      <section class="about-section">
+      </section>  
+      <section class="about-section wrapper">
         <div class="company-description">
           <p>
             Мы - маленькая, но гордая дизайн-студия из Краснодара.
@@ -158,8 +152,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <ul class="partners">
+      <section> 
+        <ul class="partners wrapper">
           <li class="partner-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy-logo.png" alt="Логотип html academy"></a></li>
           <li class="partner-logo"><a href="https://lonixoon.github.io/barbershop-adaptive/"><img src="img/borodinski-logo.png" alt="Логотип Borodinski"></a></li>
           <li class="partner-logo"><a href="https://hungryowl.github.io/pink/index.html"><img src="img/pink-logo.png" alt="Логотип Pink"></a></li>
@@ -171,11 +165,13 @@
       <section>
         <div id="map">          
         </div>
-        <div class="contacts">
-          <h4>NЁRDS DESIGN STUDIO</h4>
-          <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-          <a href="" class="feedback-link">Напишите нам</a>
+        <div class="wrapper">
+          <div class="contacts">
+            <h4>NЁRDS DESIGN STUDIO</h4>
+            <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
+            <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
+          </div>
         </div>
         <div id="feedback-popup" class="hidden">
           <button type="button" class="popup-close"></button>
@@ -192,14 +188,16 @@
           </form>
         </div>
       </section>
-      <section class="social-networks">
-        <a class="social-link" href=""><img src="img/vk-icon.svg" alt="Мы Вконтакте"></a>
-        <a class="social-link" href=""><img src="img/fb-icon.svg" alt="Мы в Фейсбуке"></a>
-        <a class="social-link" href=""><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a>
-        <div class="discount">
+      <section class="social-networks wrapper">
+        <section class="social-links">
+          <a class="social-link" href=""><img src="img/vk-icon.svg" alt="Мы Вконтакте"></a>
+          <a class="social-link" href=""><img src="img/fb-icon.svg" alt="Мы в Фейсбуке"></a>
+          <a class="social-link" href=""><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a>
+        </section>
+        <section class="discount">
           <p class="friendship">Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>
+        </section>
       </section>
     </footer>
   </body>

@@ -7,25 +7,27 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-top">
-        <a href="index.html">
-          <img src="img/nerds-logo.svg" alt="Логотип">
-        </a>  
-        <nav class="site-navigation">
-          <ul>
-            <li class="nav-item"><a class="nav-link" href="">Студия</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Клиенты</a></li>
-            <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="user-navigation">
-          <a class="nav-link basket-link" href="">Корзина</a>
+      <div class="wrapper">
+        <div class="header-top">
+          <a href="index.html">
+            <img src="img/nerds-logo.svg" alt="Логотип">
+          </a>  
+          <nav class="site-navigation">
+            <ul>
+              <li class="nav-item"><a class="nav-link" href="">Студия</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Клиенты</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="user-navigation">
+            <a class="nav-link basket-link" href="">Корзина</a>
+          </div>
         </div>
+        <h1 class="catalog-header">Магазин готовых шаблонов</h1>          
       </div>
-      <h1 class="catalog-header">Магазин готовых шаблонов</h1>          
     </header>
-    <main class="catalog">
+    <main class="catalog wrapper">
       <aside class="filter">
         <form action="/filter-catalog" method="get">
           <div class="filter-item">
@@ -69,7 +71,7 @@
           <button class="filter-button filter-item" type="submit">Показать</button>
         </form>
       </aside>
-      <section class="catalog-sort">
+      <section>
         <div class="sort-items">
           <h4>Сортировать:</h4>
           <div>
@@ -83,103 +85,103 @@
             <a href="" class="sort-down"></a>
             <a href="" class="sort-up"></a>
           </div>  
-        </div>
-        <div class="catalog-content">
-          <div class="catalog-items">
-            <div class="catalog-item">
-              <!-- Не совсем понимаю, как сделаны кружки сверху карточки проекта.
-              Предположу, что это задается через css. -->
-              <div class="project-header"></div>
-              <div>
-                <img src="img/sedona_project.jpg" alt="Проект Седона">
-              </div>
-              <div class="project-info">
-                <h2 class="project-title"><a href="">Sedona</a></h2>  
-                <p class="project-description">Информационный сайт для туристов</p>
-                <div class="project-price">9 900 руб.</div>
-              </div>
+        </div>        
+        <div class="catalog-items">
+          <div class="catalog-item">
+            <!-- Не совсем понимаю, как сделаны кружки сверху карточки проекта.
+            Предположу, что это задается через css. -->
+            <div class="project-header"></div>
+            <div>
+              <img src="img/sedona_project.jpg" alt="Проект Седона">
             </div>
-            <div class="catalog-item">
-              <!-- Обертка для шапки карточки проекта -->
-              <div class="project-header"></div>
-              <div>
-                <img src="img/pink_project.jpg" alt="Проект Pink">
-              </div>
-              <div class="project-info">
-                <h2 class="project-title"><a href="">Pink app</a></h2>  
-                <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
-                <div class="project-price">9 900 руб.</div>
-              </div>
+            <div class="project-info">
+              <h2 class="project-title"><a href="">Sedona</a></h2>  
+              <p class="project-description">Информационный сайт для туристов</p>
+              <div class="link upcase red-link price-link">9 900 руб.</div>
             </div>
-            <div class="catalog-item">
-              <!-- Обертка для шапки карточки проекта -->
-              <div class="project-header"></div>
-              <div>
-                <img src="img/barbershop_project.jpg" alt="Проект Borodinski">
-              </div>
-              <div class="project-info">
-                <h2 class="project-title"><a href="">Barbershop</a></h2>
-                <p class="project-description">Сайт салона красоты.
-                <br>Для мужчин, да.
-                </p>
-                <div class="project-price">9 900 руб.</div>
-              </div>
+          </div>
+          <div class="catalog-item">
+            <!-- Обертка для шапки карточки проекта -->
+            <div class="project-header"></div>
+            <div>
+              <img src="img/pink_project.jpg" alt="Проект Pink">
             </div>
-            <div class="catalog-item">
-              <!-- Обертка для шапки карточки проекта -->
-              <div class="project-header"></div>
-              <div>
-                <img src="img/mishka_project.jpg" alt="Проект Mishka">
-              </div>
-              <div class="project-info">
-                <h2 class="project-title"><a href="">Mishka</a></h2>  
-                <p class="project-description">Интернет-магазин вязаных игрушек</p>
-                <div class="project-price">9 900 руб.</div>
-              </div>
+            <div class="project-info">
+              <h2 class="project-title"><a href="">Pink app</a></h2>  
+              <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
+              <div class="link upcase red-link price-link">9 900 руб.</div>
             </div>
-            <div class="catalog-item">
-              <!-- Обертка для шапки карточки проекта -->
-              <div class="project-header"></div>
-              <div>
-                <img src="img/aplus_project.jpg" alt="Проект A Plus">
-              </div>
-              <div class="project-info">
-                <h2 class="project-title"><a href="">A plus</a></h2>  
-                <p class="project-description">Лендинг курсов повышения квалификации</p>
-                <div class="project-price">9 900 руб.</div>
-              </div>
+          </div>
+          <div class="catalog-item">
+            <!-- Обертка для шапки карточки проекта -->
+            <div class="project-header"></div>
+            <div>
+              <img src="img/barbershop_project.jpg" alt="Проект Borodinski">
             </div>
-            <div class="catalog-item">
-              <!-- Обертка для шапки карточки проекта -->
-              <div class="project-header"></div>
-              <div>
-                <img src="img/kvast_project.jpg" alt="Проект Кваст">
-              </div>
-              <div class="project-info">
-                <h2 class="project-title"><a href="">Кваст</a></h2>  
-                <p class="project-description">Промо-сайт производителя крафтового кваса</p>
-                <div class="project-price">9 900 руб.</div>
-              </div>
+            <div class="project-info">
+              <h2 class="project-title"><a href="">Barbershop</a></h2>
+              <p class="project-description">Сайт салона красоты.
+              <br>Для мужчин, да.
+              </p>
+              <div class="link upcase red-link price-link">9 900 руб.</div>
             </div>
-          </div>        
-          <div class="pagination">
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">Следующая</a>
-          </div>  
+          </div>
+          <div class="catalog-item">
+            <!-- Обертка для шапки карточки проекта -->
+            <div class="project-header"></div>
+            <div>
+              <img src="img/mishka_project.jpg" alt="Проект Mishka">
+            </div>
+            <div class="project-info">
+              <h2 class="project-title"><a href="">Mishka</a></h2>  
+              <p class="project-description">Интернет-магазин вязаных игрушек</p>
+              <div class="link upcase red-link price-link">9 900 руб.</div>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <!-- Обертка для шапки карточки проекта -->
+            <div class="project-header"></div>
+            <div>
+              <img src="img/aplus_project.jpg" alt="Проект A Plus">
+            </div>
+            <div class="project-info">
+              <h2 class="project-title"><a href="">A plus</a></h2>  
+              <p class="project-description">Лендинг курсов повышения квалификации</p>
+              <div class="link upcase red-link price-link">9 900 руб.</div>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <!-- Обертка для шапки карточки проекта -->
+            <div class="project-header"></div>
+            <div>
+              <img src="img/kvast_project.jpg" alt="Проект Кваст">
+            </div>
+            <div class="project-info">
+              <h2 class="project-title"><a href="">Кваст</a></h2>  
+              <p class="project-description">Промо-сайт производителя крафтового кваса</p>
+              <div class="link upcase red-link price-link">9 900 руб.</div>
+            </div>
+          </div>
+        </div>                          
+        <div class="pagination">
+          <a href="">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">Следующая</a>
         </div>
       </section>      
     </main>
     <footer class="main-footer">
       <section>
-        <div id="map">          
+        <div id="map" class="map">          
         </div>
-        <div class="contacts">
-          <h4>NЁRDS DESIGN STUDIO</h4>
-          <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-          <a href="" class="feedback-link">Напишите нам</a>
+        <div class="wrapper">
+          <div class="contacts">
+            <h4>NЁRDS DESIGN STUDIO</h4>
+            <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
+            <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
+          </div>
         </div>
         <div id="feedback-popup" class="hidden">
           <button type="button" class="popup-close"></button>
@@ -196,14 +198,16 @@
           </form>
         </div>
       </section>
-      <section class="social-networks">
-        <a class="social-link" href=""><img src="img/vk-icon.svg" alt="Мы Вконтакте"></a>
-        <a class="social-link" href=""><img src="img/fb-icon.svg" alt="Мы в Фейсбуке"></a>
-        <a class="social-link" href=""><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a>
-        <div class="discount">
+      <section class="social-networks wrapper">
+        <section class="social-links">
+          <a class="social-link" href=""><img src="img/vk-icon.svg" alt="Мы Вконтакте"></a>
+          <a class="social-link" href=""><img src="img/fb-icon.svg" alt="Мы в Фейсбуке"></a>
+          <a class="social-link" href=""><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a>
+        </section>
+        <section class="discount">
           <p class="friendship">Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>
+        </section>
       </section>
     </footer>
   </body>
