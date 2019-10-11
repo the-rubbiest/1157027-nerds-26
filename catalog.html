@@ -16,7 +16,7 @@
             <ul>
               <li class="nav-item"><a class="nav-link" href="">Студия</a></li>
               <li class="nav-item"><a class="nav-link" href="">Клиенты</a></li>
-              <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+              <li class="nav-item"><a class="nav-link active" href="catalog.html">Магазин</a></li>
               <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
             </ul>
           </nav>
@@ -30,91 +30,111 @@
     <main class="catalog wrapper">
       <aside class="filter">
         <form action="/filter-catalog" method="get">
-          <div class="filter-item">
+          <div class="filter-item">        
             <h4 class="input-header">Сетка:</h4>
-            <div>
-              <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
-              <label for="adaptive">Адаптивная</label>              
-            </div>
-            <div>
-              <input type="radio" name="grid" id="fixed" value="fixed">
-              <label for="fixed">Фиксированная</label>
-            </div>
-            <div>
-              <input type="radio" name="grid" id="rubber" value="rubber">
-              <label for="rubber">Резиновая</label>
-            </div>
+            <label class="filter-radio">
+              <input type="radio" name="grid" id="adaptive" value="adaptive" checked class="visually-hidden">
+              <span class="radio-indicator"></span>
+              Адаптивная
+            </label>
+            <label class="filter-radio">
+              <input type="radio" name="grid" id="fixed" value="fixed" class="visually-hidden">
+              <span class="radio-indicator"></span>  
+              Фиксированная
+            </label>
+            <label class="filter-radio">
+              <input type="radio" name="grid" id="rubber" value="rubber" class="visually-hidden">
+              <span class="radio-indicator"></span>
+              Резиновая
+            </label>
           </div>
           <div class="filter-item">
             <h4 class="input-header">Особенности:</h4>
-            <div>
-              <input type="checkbox" name="features" id="slider" value="slider" checked>
-              <label for="slider">Слайдер</label>
-            </div>
-            <div>
-              <input type="checkbox" name="features" id="advantages" value="advantages">
-              <label for="advantages">Блок преимуществ</label>
-            </div>
-            <div>
-              <input type="checkbox" name="features" id="news" value="news" checked>
-              <label for="news">Новости</label>
-            </div>
-            <div>
-              <input type="checkbox" name="features" id="gallery" value="gallery">
-              <label for="gallery">Галерея</label>
-            </div>
-            <div>
-              <input type="checkbox" name="features" id="basket" value="basket">
-              <label for="basket">Корзина</label>
-            </div>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="features" id="slider" value="slider" checked class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Слайдер
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="features" id="advantages" value="advantages" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Блок преимуществ
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="features" id="news" value="news" checked class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Новости
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="features" id="gallery" value="gallery" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Галерея
+            </label>
+            <label class="filter-checkbox">
+                <input type="checkbox" name="features" id="basket" value="basket" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                Корзина
+            </label>
           </div>
           <button class="filter-button filter-item" type="submit">Показать</button>
         </form>
       </aside>
       <section>
         <div class="sort-items">
-          <h4>Сортировать:</h4>
-          <div>
-            <ul>
+          <h4 class="sort-title">Сортировать:</h4>
+          <div class="sort-elements">
+            <ul class="sort-list">
               <li class="sort-item"><a href="">По цене</a></li>
               <li class="sort-item"><a href="">По типу</a></li>
               <li class="sort-item"><a href="">По названию</a></li>
             </ul>
             <!-- Треугольники сортировки. Не уверен, задаются ли они через css
             или подключаются как изображения. Пока что сделал, будто через css. -->
-            <a href="" class="sort-down"></a>
-            <a href="" class="sort-up"></a>
+            <a href="" class="arrow arrow-down"></a>
+            <a href="" class="arrow arrow-up"></a>
           </div>  
         </div>        
         <div class="catalog-items">
           <div class="catalog-item">
             <!-- Не совсем понимаю, как сделаны кружки сверху карточки проекта.
             Предположу, что это задается через css. -->
-            <div class="project-header"></div>
+            <div class="project-header">
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+            </div>
             <div>
               <img src="img/sedona_project.jpg" alt="Проект Седона">
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">Sedona</a></h2>  
               <p class="project-description">Информационный сайт для туристов</p>
-              <div class="link upcase red-link price-link">9 900 руб.</div>
+              <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
             <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
+            <div class="project-header">
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+            </div>
             <div>
               <img src="img/pink_project.jpg" alt="Проект Pink">
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">Pink app</a></h2>  
               <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
-              <div class="link upcase red-link price-link">9 900 руб.</div>
+              <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
             <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
+            <div class="project-header">
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+            </div>
             <div>
               <img src="img/barbershop_project.jpg" alt="Проект Borodinski">
             </div>
@@ -123,51 +143,63 @@
               <p class="project-description">Сайт салона красоты.
               <br>Для мужчин, да.
               </p>
-              <div class="link upcase red-link price-link">9 900 руб.</div>
+              <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
             <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
+            <div class="project-header">
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+            </div>
             <div>
               <img src="img/mishka_project.jpg" alt="Проект Mishka">
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">Mishka</a></h2>  
               <p class="project-description">Интернет-магазин вязаных игрушек</p>
-              <div class="link upcase red-link price-link">9 900 руб.</div>
+              <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
             <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
+            <div class="project-header">
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+            </div>
             <div>
               <img src="img/aplus_project.jpg" alt="Проект A Plus">
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">A plus</a></h2>  
               <p class="project-description">Лендинг курсов повышения квалификации</p>
-              <div class="link upcase red-link price-link">9 900 руб.</div>
+              <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
             <!-- Обертка для шапки карточки проекта -->
-            <div class="project-header"></div>
+            <div class="project-header">
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+              <div class="header-circle"></div>
+            </div>
             <div>
               <img src="img/kvast_project.jpg" alt="Проект Кваст">
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">Кваст</a></h2>  
               <p class="project-description">Промо-сайт производителя крафтового кваса</p>
-              <div class="link upcase red-link price-link">9 900 руб.</div>
+              <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
         </div>                          
         <div class="pagination">
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-          <a href="">Следующая</a>
+          <a class="page current" href="">1</a>
+          <a class="page" href="">2</a>
+          <a class="page" href="">3</a>
+          <a class="page next" href="">Следующая</a>
         </div>
       </section>      
     </main>
@@ -177,25 +209,37 @@
         </div>
         <div class="wrapper">
           <div class="contacts">
-            <h4>NЁRDS DESIGN STUDIO</h4>
-            <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
+            <h4 class="contacts-header">NЁRDS DESIGN STUDIO</h4>
+            <p class="contacts-address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts-phone">тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
             <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
           </div>
         </div>
-        <div id="feedback-popup" class="hidden">
-          <button type="button" class="popup-close"></button>
-          <h4>Напишите нам</h4>
-          <form action="/feedback" method="post">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия" 
-            pattern="(.*)\s(.*)" required>
-            <label for="email">Ваш e-mail:</label> 
-            <input type="email" name="email" id="email" placeholder="email@example.com" required>
-            <label for="text-field">Текст письма:</label>
-            <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
-            <button type="submit">Отправить</button>
-          </form>
+        <div id="feedback-popup" class="feedback-popup hidden">
+          <button type="button" class="popup-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="popup-content">
+            <h4>Напишите нам</h4>
+            <form action="/feedback" method="post">
+              <div class="input-blocks">
+                <div class="input-block">
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия" 
+                  pattern="(.*)\s(.*)" required>
+                </div>
+                <div class="input-block">
+                  <label for="email">Ваш e-mail:</label> 
+                  <input type="email" name="email" id="email" placeholder="email@example.com" required>
+                </div>
+              </div>
+              <div class="text-block">
+                <label for="text-field">Текст письма:</label>
+                <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
+              </div>
+              <button type="submit" class="link red-link upcase feedback-submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="social-networks wrapper">

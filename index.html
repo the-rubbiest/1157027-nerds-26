@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -24,16 +25,14 @@
         </div>
       </div>
       <section class="slider wrapper slide-image first-slide">
-        <div>
-          <div class="slide-info">
-            <p class="tagline">
-              Долго, дорого, скрупулезно.
-            </p>
-            <p class="tagline-description">
-              Математически выверенный дизайн для вашего сайта 
-              или мобильного приложения
-            </p> 
-          </div>
+        <div class="slide-info">
+          <p class="tagline">
+            Долго, дорого, скрупулезно.
+          </p>
+          <p class="tagline-description">
+            Математически выверенный дизайн для вашего сайта 
+            или мобильного приложения
+          </p> 
         </div>
         <div class="slide hidden">
           <div class="slide-info">
@@ -58,7 +57,7 @@
           </div>
         </div>
         <div class="slider-controls">
-          <a class="link red-link slider-link" href="">Узнать больше</a>
+          <a class="link upcase red-link slider-link" href="">Узнать больше</a>
           <div>
             <input type="radio" name="slider" id="slide1" checked>
             <input type="radio" name="slider" id="slide2">
@@ -112,42 +111,42 @@
       </section>  
       <section class="about-section wrapper">
         <div class="company-description">
-          <p>
+          <p class="company-specification">
             Мы - маленькая, но гордая дизайн-студия из Краснодара.
           </p>
-          <p>
+          <p class="company-principles">
             Исповедуем принципы минимализма и чистоты. 
             Ставим математический расчет превыше креатива.
             Работаем не покладая рук, как роботы.
           </p>
-          <h4>
+          <h4 class="services-header">
             Выполняем заказы на разработку:
           </h4>
-          <ul>
+          <ul class="develop-services">
             <li class="develop-service">Веб-сайтов любой сложности</li>
             <li class="develop-service">Мобильных приложений для iOS и Android</li>
             <li class="develop-service">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div>
-          <div>
+          <div class="accuracy-logo">
             <img src="img/nerds-illustration.jpg" alt="Логотип">
           </div>        
-          <h3>
+          <h3 class="accuracy-header">
             С 2004 года любим точность во всем:
           </h3>
           <div class="accuracy-items">
             <div class="accuracy-item">
-              <p>146%</p>
-              <p>Уровень самоотдачи</p>
+              <p class="accuracy-percent">146%</p>
+              <p class="accuracy-title">Уровень самоотдачи</p>
             </div>
             <div class="accuracy-item">
-              <p>100%</p>
-              <p>Соблюдение сроков</p>
+              <p class="accuracy-percent">100%</p>
+              <p class="accuracy-title">Соблюдение сроков</p>
             </div>
             <div class="accuracy-item">
-              <p>50%</p>
-              <p>Минимальная предоплата</p>
+              <p class="accuracy-percent">50%</p>
+              <p class="accuracy-title">Минимальная предоплата</p>
             </div>
           </div>
         </div>
@@ -167,25 +166,37 @@
         </div>
         <div class="wrapper">
           <div class="contacts">
-            <h4>NЁRDS DESIGN STUDIO</h4>
-            <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
+            <h4 class="contacts-header">NЁRDS DESIGN STUDIO</h4>
+            <p class="contacts-address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts-phone">тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
             <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
           </div>
         </div>
-        <div id="feedback-popup" class="hidden">
-          <button type="button" class="popup-close"></button>
-          <h4>Напишите нам</h4>
-          <form action="/feedback" method="post">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия" 
-            pattern="(.*)\s(.*)" required>
-            <label for="email">Ваш e-mail:</label> 
-            <input type="email" name="email" id="email" placeholder="email@example.com" required>
-            <label for="text-field">Текст письма:</label>
-            <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
-            <button type="submit">Отправить</button>
-          </form>
+        <div id="feedback-popup" class="feedback-popup hidden">
+          <button type="button" class="popup-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="popup-content">
+            <h4>Напишите нам</h4>
+            <form action="/feedback" method="post">
+              <div class="input-blocks">
+                <div class="input-block">
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия" 
+                  pattern="(.*)\s(.*)" required>
+                </div>
+                <div class="input-block">
+                  <label for="email">Ваш e-mail:</label> 
+                  <input type="email" name="email" id="email" placeholder="email@example.com" required>
+                </div>
+              </div>
+              <div class="text-block">
+                <label for="text-field">Текст письма:</label>
+                <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
+              </div>
+              <button type="submit" class="link red-link upcase feedback-submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="social-networks wrapper">
