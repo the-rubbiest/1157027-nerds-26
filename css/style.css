@@ -278,9 +278,14 @@ body {
 }
 
 .contacts {
+  box-sizing: border-box;
   width: 320px;
   min-height: 310px;
   background-color: #ffffff;
+  padding: 50px;
+  position: absolute;
+  top: 50px;
+  z-index: 5;
 }
 
 .contacts a {
@@ -488,7 +493,7 @@ body {
 .project-info {
   background-color: #eeeeee;
   bottom: 0;
-  height: 231px;
+  min-height: 231px;
   position: absolute;
   width: 100%;
   display: none;
@@ -673,6 +678,7 @@ body {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 35px;
 }
 
@@ -751,6 +757,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 10;
 }
 
 .popup-close {
@@ -791,6 +798,14 @@ body {
   background-color: #fb565a;
 }
 
+.popup-close:active:after {
+  background-color: #ffeeee;
+}
+
+.popup-close:active:before {
+  background-color: #ffeeee;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -826,6 +841,21 @@ body {
   border: 1px solid #d7dcde;
   padding: 15px;
   font: inherit;
+}
+
+.feedback-popup input:hover,
+.feedback-popup textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.feedback-popup input:focus,
+.feedback-popup textarea:focus {
+  border-color: #000000;
+}
+
+.invalid {
+  border: 1px solid #e74246;
+  color: #e74246;
 }
 
 .input-block {
@@ -902,6 +932,14 @@ body {
   background-color: #b8b8b8;
 }
 
+.filter-radio input[type=radio]:hover + .radio-indicator {
+  border-color: #4d4d4d;
+}
+
+.filter-radio input[type=radio]:hover + .radio-indicator::before {
+  background-color: #4d4d4d;
+}
+
 .filter-radio {
   position: relative;
   cursor: pointer;
@@ -946,4 +984,25 @@ body {
   border-bottom: 5px solid #b8b8b8;
   transform: rotate(-45deg);
   z-index: 5;
+}
+
+.filter-checkbox input[type=checkbox]:hover + .checkbox-indicator {
+  border-color: #4d4d4d;
+}
+
+.filter-checkbox input[type=checkbox]:hover + .checkbox-indicator::before {
+  border-color: #4d4d4d;
+}
+
+.map {
+  min-height: 420px;
+  position: relative;
+}
+
+.main-logo:hover img{
+  opacity: 0.8;
+}
+
+.main-logo:active img{
+  opacity: 0.3;
 }

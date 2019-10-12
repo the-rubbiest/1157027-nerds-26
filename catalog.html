@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0e6cea78-e920-40b3-aa25-b86df570a102&lang=ru_RU" type="text/javascript"></script>    
   </head>
   <body>
     <header class="main-header">
       <div class="wrapper">
         <div class="header-top">
-          <a href="index.html">
+          <a href="index.html" class="main-logo" >
             <img src="img/nerds-logo.svg" alt="Логотип">
           </a>  
           <nav class="site-navigation">
@@ -205,23 +207,23 @@
     </main>
     <footer class="main-footer">
       <section>
-        <div id="map" class="map">          
-        </div>
-        <div class="wrapper">
-          <div class="contacts">
-            <h4 class="contacts-header">NЁRDS DESIGN STUDIO</h4>
-            <p class="contacts-address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-            <p class="contacts-phone">тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-            <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
+        <div id="map" class="map">      
+          <div class="wrapper">
+            <div class="contacts">
+              <h4 class="contacts-header">NЁRDS DESIGN STUDIO</h4>
+              <p class="contacts-address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+              <p class="contacts-phone">тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
+              <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
+            </div>
           </div>
-        </div>
+        </div>          
         <div id="feedback-popup" class="feedback-popup hidden">
           <button type="button" class="popup-close">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <div class="popup-content">
             <h4>Напишите нам</h4>
-            <form action="/feedback" method="post">
+            <form action="/feedback" method="post" id="feedback-form">
               <div class="input-blocks">
                 <div class="input-block">
                   <label for="name">Ваше имя:</label>
