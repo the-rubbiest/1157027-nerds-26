@@ -25,6 +25,13 @@
        url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff');
 }
 
+@keyframes bounce {
+  0% { transform: translate(-50%, -2000px); }
+  50% { transform: translate(-50%, 50px); }
+  60% { transform: translate(-50%, 30px); }
+  100% { transform: translate(-50%, -50%); }
+}
+
 body {
   color: #000000;
   font-family: 'Roboto', Arial, sans-serif;
@@ -758,6 +765,8 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   z-index: 10;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .popup-close {
@@ -1005,4 +1014,91 @@ body {
 
 .main-logo:active img{
   opacity: 0.3;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  box-sizing: border-box;
+  width: 80px;
+  padding: 8px 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  margin-left: 10px;
+}
+
+.max-price {
+  text-align: right;
 }

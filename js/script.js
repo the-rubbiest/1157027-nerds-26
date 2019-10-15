@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("Скрипты подгружены");
+document.addEventListener('DOMContentLoaded', function() {
   setOpenPopupListener();
   setClosePopupListener();
   initFormSubmit();
@@ -9,11 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function initYmap() {
   ymaps.ready(init);
   function init() { 
-    var myMap = new ymaps.Map("map", {
+    var myMap = new ymaps.Map('map', {
         center: [59.938631, 30.323055],
         zoom: 17
     });
-    //var myPlaceMark = new ymaps.Placemark([59.938631, 30.323055]);
     var myPlaceMark = new ymaps.Placemark([59.938631, 30.323055], {}, {
       iconLayout: 'default#image',
       iconImageHref: 'img/map-marker.png',
@@ -26,26 +24,29 @@ function initYmap() {
 
 function setClosePopupListener() {
   document.addEventListener('click', function(ev) {
-    if(document.querySelector('.feedback-popup') && !document.querySelector('.feedback-popup').classList.contains('hidden')) {
-      console.log("Попап открыт");
-      let target = ev.target;
-      console.log(target);
-      if(target === document.querySelector('.popup-close')) {
-        document.getElementById('feedback-popup').classList.add('hidden');
-      }
+    let target = ev.target;
+    if(target === document.querySelector('.popup-close')) {
+      closePopup();
+    }
+  });
+  document.addEventListener('keydown', function(ev) {
+    if(ev.keyCode === 27) {
+      ev.preventDefault();
+      closePopup();
     }
   });
 }
 
-function setOpenPopupListener() {
+function setOpenPopupListener() {  
   document.querySelector('.feedback-link').addEventListener('click', function(ev) {
     ev.preventDefault();
+    let nameInput = document.getElementById('name');
     document.querySelector('.feedback-popup').classList.remove('hidden');
+    nameInput.focus();
   });
 }
 
 function initFormSubmit() {
-  console.log("Есть заход в функцию")
   document.querySelector('.feedback-submit').addEventListener('click', function(ev) {
     let inputs = document.getElementById('feedback-form').querySelectorAll('input');
     for(let i = 0; i < inputs.length; i++) {
@@ -55,6 +56,12 @@ function initFormSubmit() {
       } else {
         formInput.classList.remove('invalid');      
       }
-    }
-  })
+    }     
+  });
+}
+
+function closePopup() {
+  if(document.querySelector('.feedback-popup') && !document.querySelector('.feedback-popup').classList.contains('hidden')) {
+    document.getElementById('feedback-popup').classList.add('hidden');
+  }
 }

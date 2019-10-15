@@ -32,6 +32,22 @@
     <main class="catalog wrapper">
       <aside class="filter">
         <form action="/filter-catalog" method="get">
+          <div class="filter-item">
+            <h4 class="input-header">Стоимость:</h4>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
+              </div>
+            </div>
+          </div>
           <div class="filter-item">        
             <h4 class="input-header">Сетка:</h4>
             <label class="filter-radio">
