@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setClosePopupListener();
   initFormSubmit();
   initYmap();
+  initDropErrorsListener();
 });
 
 function initYmap() {
@@ -48,7 +49,7 @@ function setOpenPopupListener() {
 
 function initFormSubmit() {
   document.querySelector('.feedback-submit').addEventListener('click', function(ev) {
-    let inputs = document.getElementById('feedback-form').querySelectorAll('input');
+    let inputs = getPopupInputs();
     for(let i = 0; i < inputs.length; i++) {
       let formInput = inputs[i]
       if(formInput.checkValidity() == false) {
@@ -58,6 +59,26 @@ function initFormSubmit() {
       }
     }     
   });
+}
+
+function getPopupInputs() {
+  let inputs = [];
+    for(let input of document.getElementById('feedback-form').querySelectorAll('input')) {
+      inputs.push(input);
+    }
+    for(let input of document.getElementById('feedback-form').querySelectorAll('textarea')) {
+      inputs.push(input);
+    }
+    return inputs;
+}
+
+function initDropErrorsListener() {
+  let inputs = getPopupInputs();
+  for(let input of inputs) {
+    input.addEventListener('input', function(ev) {
+      input.classList.remove('invalid');
+    });
+  }
 }
 
 function closePopup() {
