@@ -964,6 +964,10 @@ body {
   background-color: #b8b8b8;
 }
 
+.filter-radio input[type=radio]:focus + .radio-indicator::before {
+  background-color: #4d4d4d;
+}
+
 .filter-radio input[type=radio]:hover + .radio-indicator {
   border-color: #4d4d4d;
 }
@@ -1044,6 +1048,7 @@ body {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+  opacity: 1;
 }
 
 .filter-checkbox input[type=checkbox]:hover + .checkbox-indicator {
