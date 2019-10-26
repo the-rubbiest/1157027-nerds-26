@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=0e6cea78-e920-40b3-aa25-b86df570a102&lang=ru_RU" type="text/javascript"></script>    
+    <link href="css/style.css" rel="stylesheet">    
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header header-catalog">
       <div class="wrapper">
         <div class="header-top catalog-head">
           <a href="index.html" class="main-logo" >
@@ -48,7 +46,7 @@
               </div>
             </div>
           </div>
-          <div class="filter-item">        
+          <div class="filter-item grid">        
             <h4 class="input-header">Сетка:</h4>
             <label class="filter-radio">
               <input type="radio" name="grid" id="adaptive" value="adaptive" checked class="visually-hidden">
@@ -89,9 +87,9 @@
               Галерея
             </label>
             <label class="filter-checkbox">
-                <input type="checkbox" name="features" id="basket" value="basket" class="visually-hidden">
-                <span class="checkbox-indicator"></span>
-                Корзина
+              <input type="checkbox" name="features" id="basket" value="basket" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Корзина
             </label>
           </div>
           <button class="filter-button filter-item" type="submit">Показать</button>
@@ -105,17 +103,13 @@
               <li class="sort-item"><a href="">По цене</a></li>
               <li class="sort-item"><a href="">По типу</a></li>
               <li class="sort-item"><a href="">По названию</a></li>
-            </ul>
-            <!-- Треугольники сортировки. Не уверен, задаются ли они через css
-            или подключаются как изображения. Пока что сделал, будто через css. -->
-            <a href="" class="arrow arrow-down"></a>
+            </ul>            
             <a href="" class="arrow arrow-up"></a>
+            <a href="" class="arrow arrow-down"></a>            
           </div>  
         </div>        
         <div class="catalog-items">
           <div class="catalog-item">
-            <!-- Не совсем понимаю, как сделаны кружки сверху карточки проекта.
-            Предположу, что это задается через css. -->
             <div class="project-header">
               <div class="header-circle"></div>
               <div class="header-circle"></div>
@@ -126,12 +120,11 @@
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">Sedona</a></h2>  
-              <p class="project-description">Информационный сайт для туристов</p>
+              <p class="project-description narrow-description">Информационный сайт для туристов</p>
               <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
             <div class="project-header">
               <div class="header-circle"></div>
               <div class="header-circle"></div>
@@ -147,7 +140,6 @@
             </div>
           </div>
           <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
             <div class="project-header">
               <div class="header-circle"></div>
               <div class="header-circle"></div>
@@ -158,14 +150,12 @@
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">Barbershop</a></h2>
-              <p class="project-description">Сайт салона красоты.
-              <br>Для мужчин, да.              
+              <p class="project-description narrow-description">Сайт салона красоты. Для мужчин, да.              
               </p>              
               <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
             <div class="project-header">
               <div class="header-circle"></div>
               <div class="header-circle"></div>
@@ -176,12 +166,11 @@
             </div>
             <div class="project-info">
               <h2 class="project-title"><a href="">Mishka</a></h2>  
-              <p class="project-description">Интернет-магазин вязаных игрушек</p>
+              <p class="project-description narrow-description">Интернет-магазин вязаных игрушек</p>
               <a href="" class="link upcase red-link price-link">9 900 руб.</a>
             </div>
           </div>
           <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
             <div class="project-header">
               <div class="header-circle"></div>
               <div class="header-circle"></div>
@@ -197,7 +186,6 @@
             </div>
           </div>
           <div class="catalog-item">
-            <!-- Обертка для шапки карточки проекта -->
             <div class="project-header">
               <div class="header-circle"></div>
               <div class="header-circle"></div>
@@ -222,13 +210,13 @@
       </section>      
     </main>
     <footer class="main-footer">
-      <section>
+      <section class="map-section">
         <div id="map" class="map">      
           <div class="wrapper">
             <div class="contacts">
               <h4 class="contacts-header">NЁRDS DESIGN STUDIO</h4>
               <p class="contacts-address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-              <p class="contacts-phone">тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
+              <p class="contacts-phone">тел. <a href="tel:+78122757575">+7 (812)275-75-75</a></p>
               <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
             </div>
           </div>
@@ -268,9 +256,11 @@
         </section>
         <section class="discount">
           <p class="friendship">Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <p class="friendship-discount">Скидка 10% для друзей из социальных сетей</p>
         </section>
       </section>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0e6cea78-e920-40b3-aa25-b86df570a102&lang=ru_RU" type="text/javascript"></script>
   </body>
 </html>

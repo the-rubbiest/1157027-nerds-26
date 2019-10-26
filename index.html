@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=0e6cea78-e920-40b3-aa25-b86df570a102&lang=ru_RU" type="text/javascript"></script>    
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header header-index">
       <div class="header-top wrapper index-head">
         <span>
           <img src="img/nerds-logo.svg" alt="Логотип" width="160" height="65">
@@ -25,56 +23,80 @@
           <a class="nav-link basket-link" href="">Корзина</a>
         </div>
       </div>
-      <section class="slider wrapper slide-image first-slide">
+      <section class="slider">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <div class="slider-controls">
+            <i class="control-active"></i>
+            <i></i>
+            <i></i>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <p class="tagline">Долго, дорого,<br> скрупулезно.</p>
+              <p class="tagline-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="link upcase red-link slider-link" href="">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <p class="tagline">Любим математику как никто другой</p>
+              <p class="tagline-description">Никакого креатива, только математические формулы
+                для расчета идеальных пропорций.</p>
+              <a class="link upcase red-link slider-link" href="">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <p class="tagline">Только ночь, только хардкор</p>
+              <p class="tagline-description">Работать днем, как все ? Мы против этого.
+                Ближе к полуночи работа только начинается.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--<section class="slider wrapper slide-image first-slide">
         <div class="slide-info">
           <p class="tagline">
             Долго, дорого, скрупулезно.
           </p>
           <p class="tagline-description">
-            Математически выверенный дизайн для вашего сайта 
-            или мобильного приложения
+            Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения
           </p> 
         </div>
-        <div class="slide hidden">
-          <div class="slide-info">
-            <p class="tagline">
-              Любим математику как никто другой
-            </p>
-            <p class="tagline-description">
-              Никакого креатива, только математические формулы
-              для расчета идеальных пропорций.
-            </p>
-          </div>
+        <div class="slide-info hidden">
+          <p class="tagline">
+            Любим математику как никто другой
+          </p>
+          <p class="tagline-description">
+            Никакого креатива, только математические формулы
+            для расчета идеальных пропорций.
+          </p>
         </div>
-        <div class="slide hidden">
-          <div class="slide-info">
-            <p class="tagline">
-              Только ночь, только хардкор
-            </p>
-            <p class="tagline-description">
-              Работать днем, как все ? Мы против этого.
-              Ближе к полуночи работа только начинается.
-            </p>
-          </div>
+        <div class="slide-info hidden">
+          <p class="tagline">
+            Только ночь, только хардкор
+          </p>
+          <p class="tagline-description">
+            Работать днем, как все ? Мы против этого.
+            Ближе к полуночи работа только начинается.
+          </p>
         </div>
         <div class="slider-controls">
           <a class="link upcase red-link slider-link" href="">Узнать больше</a>
           <div class="slider-inputs">
             <label class="slider-radio">
-                <input type="radio" name="slider" id="slide1" class="visually-hidden" checked>
-                <span class="radio-indicator"></span>  
+              <input type="radio" name="slider" id="slide1" class="visually-hidden" checked>
+              <span class="radio-indicator"></span>  
             </label>
             <label class="slider-radio">
-                <input type="radio" name="slider" id="slide2" class="visually-hidden" checked>
-                <span class="radio-indicator"></span>  
+              <input type="radio" name="slider" id="slide2" class="visually-hidden" checked>
+              <span class="radio-indicator"></span>  
             </label>
             <label class="slider-radio">
-                <input type="radio" name="slider" id="slide3" class="visually-hidden" checked>
-                <span class="radio-indicator"></span>  
+              <input type="radio" name="slider" id="slide3" class="visually-hidden" checked>
+              <span class="radio-indicator"></span>  
             </label>            
           </div>
         </div> 
-      </section>    
+      </section> -->    
     </header>
     <main>
       <div class="wrapper">
@@ -85,7 +107,7 @@
                 Веб-сайты
               </h3>
               <p>
-                Мир никогда не будет прежним<br> 
+                Мир никогда не будет прежним
                 после того как увидит ваш сайт!
               </p>
             </div>
@@ -112,12 +134,12 @@
                 Презентации
               </h3>
               <p>
-                Вы даже не подозреваете,<br>
+                Вы даже не подозреваете,
                 насколько вы изумительны!
               </p>
             </div>
             <a href="">
-                <div class="link upcase order-link yellow-link">Заказать</div>
+              <div class="link upcase order-link yellow-link">Заказать</div>
             </a>
           </div>
         </section>
@@ -125,7 +147,7 @@
       <section class="about-section wrapper">
         <div class="company-description">
           <p class="company-specification">
-            Мы - маленькая, но гордая дизайн-студия из Краснодара.
+            Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.
           </p>
           <p class="company-principles">
             Исповедуем принципы минимализма и чистоты. 
@@ -150,21 +172,27 @@
           </h3>
           <div class="accuracy-items">
             <div class="accuracy-item">
-              <p class="accuracy-percent">146%</p>
+              <p class="accuracy-percent">146<!--
+                --><span class="percent-symbol">%</span>
+              </p>
               <p class="accuracy-title">Уровень самоотдачи</p>
             </div>
             <div class="accuracy-item">
-              <p class="accuracy-percent">100%</p>
+              <p class="accuracy-percent">100<!--
+              --><span class="percent-symbol">%</span>
+            </p>
               <p class="accuracy-title">Соблюдение сроков</p>
             </div>
             <div class="accuracy-item">
-              <p class="accuracy-percent">50%</p>
+              <p class="accuracy-percent">50<!--
+              --><span class="percent-symbol">%</span>
+            </p>
               <p class="accuracy-title">Минимальная предоплата</p>
             </div>
           </div>
         </div>
       </section>
-      <section> 
+      <section class="partners-block"> 
         <ul class="partners wrapper">
           <li class="partner-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy-logo.png" alt="Логотип html academy" width="260" height="180"></a></li>
           <li class="partner-logo"><a href="https://lonixoon.github.io/barbershop-adaptive/"><img src="img/borodinski-logo.png" alt="Логотип Borodinski" width="260" height="180"></a></li>
@@ -174,13 +202,13 @@
       </section>      
     </main>
     <footer class="main-footer">
-      <section>
+      <section class="map-section">
         <div id="map" class="map">      
           <div class="wrapper">
             <div class="contacts">
               <h4 class="contacts-header">NЁRDS DESIGN STUDIO</h4>
               <p class="contacts-address">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-              <p class="contacts-phone">тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
+              <p class="contacts-phone">тел. <a href="tel:+78122757575">+7 (812)275-75-75</a></p>
               <a href="" class="link red-link upcase feedback-link">Напишите нам</a>
             </div>
           </div>
@@ -220,9 +248,11 @@
         </section>
         <section class="discount">
           <p class="friendship">Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <p class="friendship-discount">Скидка 10% для друзей из социальных сетей</p>
         </section>
       </section>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0e6cea78-e920-40b3-aa25-b86df570a102&lang=ru_RU" type="text/javascript"></script>    
   </body>
 </html>
