@@ -63,22 +63,35 @@ function initFormSubmit() {
 
 function getPopupInputs() {
   let inputs = [];
-    for(let input of document.getElementById('feedback-form').querySelectorAll('input')) {
-      inputs.push(input);
-    }
-    for(let input of document.getElementById('feedback-form').querySelectorAll('textarea')) {
-      inputs.push(input);
-    }
-    return inputs;
+  for(let i = 0; i < document.getElementById('feedback-form').querySelectorAll('input'); i++) {
+    inputs.push(document.getElementById('feedback-form').querySelectorAll('input')[i]);
+  }
+  for(let i = 0; i < document.getElementById('feedback-form').querySelectorAll('textarea'); i++) {
+    inputs.push(document.getElementById('feedback-form').querySelectorAll('textarea')[i]);
+  }
+
+  /*for(let input of document.getElementById('feedback-form').querySelectorAll('input')) {
+    inputs.push(input);
+  }
+  for(let input of document.getElementById('feedback-form').querySelectorAll('textarea')) {
+    inputs.push(input);
+  }*/
+  return inputs;
 }
 
 function initDropErrorsListener() {
   let inputs = getPopupInputs();
-  for(let input of inputs) {
+  for(let i = 0; i < inputs.length; i++) {
+    let input = inputs[i];
     input.addEventListener('input', function(ev) {
       input.classList.remove('invalid');
     });
   }
+  /*for(let input of inputs) {
+    input.addEventListener('input', function(ev) {
+      input.classList.remove('invalid');
+    });
+  }*/
 }
 
 function closePopup() {

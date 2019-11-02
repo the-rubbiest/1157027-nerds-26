@@ -62,6 +62,10 @@ body {
   justify-content: space-between;
 }
 
+.catalog-container {
+  width: 100%;
+}
+
 .catalog-head {
   margin-bottom: 70px;
 }
