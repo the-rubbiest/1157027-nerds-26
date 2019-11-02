@@ -69,13 +69,6 @@ function getPopupInputs() {
   for(let i = 0; i < document.getElementById('feedback-form').querySelectorAll('textarea'); i++) {
     inputs.push(document.getElementById('feedback-form').querySelectorAll('textarea')[i]);
   }
-
-  /*for(let input of document.getElementById('feedback-form').querySelectorAll('input')) {
-    inputs.push(input);
-  }
-  for(let input of document.getElementById('feedback-form').querySelectorAll('textarea')) {
-    inputs.push(input);
-  }*/
   return inputs;
 }
 
@@ -87,11 +80,6 @@ function initDropErrorsListener() {
       input.classList.remove('invalid');
     });
   }
-  /*for(let input of inputs) {
-    input.addEventListener('input', function(ev) {
-      input.classList.remove('invalid');
-    });
-  }*/
 }
 
 function closePopup() {
