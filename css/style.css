@@ -206,6 +206,10 @@ body {
   opacity: 1;
 }
 
+.sort-item.selected a {
+  opacity: 1;
+}
+
 .slider-link {
   width: 240px;
 }
@@ -844,6 +848,10 @@ body {
 }
 
 .arrow:active {
+  opacity: 1;
+}
+
+.arrow.selected {
   opacity: 1;
 }
 
